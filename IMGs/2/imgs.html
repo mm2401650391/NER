@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Night Elf Rose</title>
+    <!--css-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+        body {
+            background: #000000;
+            color: #FFFFFF;
+            font-size: 30px;
+        }
+        .d2 img {
+            float: left;
+            margin-left: 30px;
+            margin-top: 7px;
+            width: 4em;
+            height: 4em;
+        }
+
+        .d2 h2 {
+            font-size: 60px;
+            text-align: center;
+            display：inline-block;
+            width: 65%;
+            margin-top: 20px;
+            padding: 0.5em;
+            margin-left: 2.5em;
+        }
+
+
+        .d3 {
+            margin: 0.5em 0em;
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        .d3 div {
+            height: 1.2em;
+            width: 40.1em;
+            overflow-x: auto;
+            font-size: 50px;
+
+        }
+        .d4 {
+            width: 100%;
+            margin: 1em 0;
+
+        }
+        button {
+            text-align: center;
+            font-size: 50px;
+            display: block;
+            width: 100%;
+        }
+        .d4 div {
+            width: 32%;
+            font-size: 40px;
+            text-align: center;
+            display: inline-block;
+            margin-bottom: 1em;
+        }
+        .d4 div img {
+            width: 80%;
+        }
+        #div1 {
+            display: block;
+        }
+        #div2,#div3 {
+            display: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #FFFFFF;
+            margin: 0 0.3em;
+        }
+        .a {
+            border: 1px solid #FFFFFF;
+            border-radius: 30px;
+            color: #FF0E00;
+        }
+
+        .d2 span {
+            color: #8600FF;
+            font-size: 75px;
+            margin-left: 0.3em;
+        }
+        span img {
+            width: 40px;
+        }
+        .txt {
+            float: right;
+            border: 1px solid #FFFFFF;
+        }
+        progress {
+            width: 100%;
+        }
+        .d2 a {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="d2">
+        <a href="../../index.html">
+            <img src="../../Logo.jpg">
+        </a>
+        <h2>
+            <span>N</span>ight
+            <span>E</span>lf
+            <span>R</span>ose
+        </h2>
+    </div>
+    <hr />
+    <div class="d3">
+        <div>
+            <a class="a">
+                生物实验室</a>
+            <a href="../3/imgs.html">
+                化学实验室</a>
+            <a href="../4/imgs.html">
+                Tenno实验室</a>
+            <a href="../5/imgs.html">
+                通风小子的拼装实验室
+            </a>
+            <a href="../6/imgs.html">
+                Orokin实验室</a>
+            <a href="../imgs.html">
+                能源实验室</a>
+        </div>
+    </div>
+
+    <button onclick="button1()">
+        进行中的研究
+        <span><img src="../s.jpg" /></span>
+    </button>
+    <div id="div1" class="d4">
+        <div>
+            <img src="A07.jpg" /><br />
+            <span class="txt">83%</span>
+            <br />
+            <progress value="83" max="100"></progress>
+            <br />
+            血肢
+        </div>
+    </div>
+
+    <button onclick="button2()">
+        待进行的研究
+        <span><img src="../s.jpg" /></span>
+    </button>
+    <div id="div2" class="d4">
+        <img src="../no1.jpg" width="100%" />
+    </div>
+
+    <button onclick="button3()">
+        已完成的研究
+        <span><img src="../s.jpg" /></span>
+    </button>
+    <div id="div3" class="d4">
+        <div>
+            <img src="A01.jpg" />
+            <br />
+            阿克里德
+        </div>
+        <div>
+            <img src="A02.jpg" />
+            <br />
+            灼蚀变体镰
+        </div>
+        <div>
+            <img src="A03.jpg" />
+            <br />
+            裸鳃刃
+        </div>
+        <div>
+            <img src="A04.jpg" />
+            <br />
+            恶脓双斧
+        </div>
+        <div>
+            <img src="A05.jpg" />
+            <br />
+            毒囊双枪
+        </div>
+        <div>
+            <img src="A06.jpg" />
+            <br />
+            安柏勒斯
+        </div>
+        <div>
+            <img src="A08.jpg" />
+            <br />
+            异融量子枪
+        </div>
+        <div>
+            <img src="A09.jpg" />
+            <br />
+            附肢寄生者
+        </div>
+        <div>
+            <img src="A10.jpg" />
+            <br />
+            噬菌者
+        </div>
+        <div>
+            <img src="A11.jpg" />
+            <br />
+            脓痘
+        </div>
+        <div>
+            <img src="A12.jpg" />
+            <br />
+            毒囊骨茧
+        </div>
+        <div>
+            <img src="A13.jpg" />
+            <br />
+            脊椎节鞭
+        </div>
+        <div>
+            <img src="A14.jpg" />
+            <br />
+            突触生化枪
+        </div>
+        <div>
+            <img src="A15.jpg" />
+            <br />
+            托里德
+        </div>
+        <div>
+            <img src="A16.jpg" />
+            <br />
+            横痃重炮
+        </div>
+        <div>
+            <img src="A17.jpg" />
+            <br />
+            异化者
+        </div>
+        <div>
+            <img src="A18.jpg" />
+            <br />
+            引灵
+        </div>
+        <div>
+            <img src="A19.jpg" />
+            <br />
+            Infested催化剂
+        </div>
+        <div>
+            <img src="A20.jpg" />
+            <br />
+            <span>团队生命补给(中型)</span>
+        </div>
+        <div>
+            <img src="A21.jpg" />
+            <br />
+            突变原聚合物
+        </div>
+    </div>
+</body>
+<!--js-->
+<script>
+    function button1() {
+        var div1 = document.getElementById('div1');
+        if (div1.style.display == 'none') {
+            div1.style.display = 'block'
+        } else {
+            div1.style.display = 'none'
+        }
+    }
+
+    function button2() {
+        var div2 = document.getElementById('div2');
+        if (div2.style.display == 'block') {
+            div2.style.display = 'none'
+        } else {
+            div2.style.display = 'block'
+        }
+    }
+
+    function button3() {
+        var div3 = document.getElementById('div3');
+        if (div3.style.display == 'block') {
+            div3.style.display = 'none'
+        } else {
+            div3.style.display = 'block'
+        }
+    }
+</script>
+</html>
