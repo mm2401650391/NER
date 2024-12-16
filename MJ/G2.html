@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Night Elf Rose</title>
+    <!--css-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+        body {
+            background: #000000;
+            color: #FFFFFF;
+            font-size: 30px;
+        }
+        .d2 img {
+            float: left;
+            margin-left: 30px;
+            margin-top: 7px;
+            width: 4em;
+            height: 4em;
+        }
+        .d2 {
+            background-image: url('../IMGs/01.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            color: #FF9800;
+            height: 140px;
+        }
+        .d2 h2 {
+            font-size: 60px;
+            text-align: center;
+            display：inline-block;
+            width: 65%;
+            margin-top: 20px;
+            padding: 0.5em;
+            margin-left: 2.5em;
+        }
+
+        .d3 {
+            text-align: center;
+            margin-bottom: 1em;
+        }
+
+        .d3 div {
+            font-size: 45px;
+            margin: 0.5em 0em;
+        }
+        .d4 {
+            width: 100%;
+            margin: 1em 0;
+
+        }
+        button {
+            text-align: center;
+            font-size: 50px;
+            display: block;
+            width: 80%;
+            outline: none;
+            background: none;
+            color: #FFFFFF;
+            margin: 0.3em 10%;
+            border-radius: 1em;
+
+        }
+        .d4 div {
+            width: 32%;
+            font-size: 40px;
+            text-align: center;
+            display: inline-block;
+            margin-bottom: 1em;
+        }
+        .d4 div img {
+            width: 80%;
+        }
+        #div1,#div2,#div3,#div4 {
+            display: none;
+        }
+        #div3 span {
+            font-size: 30px;
+        }
+        a {
+            text-decoration: none;
+            color: #FFFFFF;
+            margin: 0 0.3em;
+        }
+        .a {
+            border: 1px solid #FFFFFF;
+            border-radius: 30px;
+            color: #FF0E00;
+        }
+
+        .d2 span {
+            color: #8600FF;
+            font-size: 75px;
+            margin-left: 0.3em;
+        }
+        .txt {
+            float: right;
+            border: 1px solid #FFFFFF;
+        }
+        progress {
+            width: 100%;
+        }
+        .d2 a {
+            margin: 0;
+        }
+        .atxt h3,h2,h4 {
+            text-align: center;
+        }
+        .txt0 {
+            width: 100%;
+            overflow-x: auto;
+            font-size: 40px;
+
+        }
+        .txt0 div {
+            margin-bottom: -60px;
+            width: 25%;
+            overflow-x: auto;
+            font-size: 55px;
+        }
+        .b {
+            color: #376CFF;
+            border-radius: 15px;
+        }
+        #div4 img {
+            
+        }
+        .t{
+            color: #434343;
+        }
+    </style>
+</head>
+<body>
+    <div class="d2">
+        <a href="../index.html">
+            <img src="../Logo.jpg">
+        </a>
+        <h2 id="typing"></h2>
+    </div>
+    <hr />
+    <div class="d3">
+        <div>
+            <a href="G1.html">
+                积分查询</a>
+            <a class="a">
+                ❀积分兑换❀
+            </a>
+        </div>
+    </div>
+    <div class="d3">
+        <div>
+            <a class="b">
+                ☞Rout宝库☜</a>
+            <a href="G4.html">
+                置换工坊</a>
+            <a href="G2-1.html">
+                Prime宝库
+            </a>
+        </div>
+    </div>
+    <div class="atxt">
+        <h3>
+            兑换请在群聊@群主，并说明兑换奖项，所有奖励等级均为零
+        </h3>
+        <button onclick="button1()" id="bu1">
+            MOD奖池
+        </button>
+        <div id="div1" class="d4">
+            <img src="IMG/Rout/01.jpg" />
+            <div>
+                <img src="IMG/Rout/1/A1.png" />
+                <br />
+                库存量：2
+                <br />
+                ［Rout*8］
+            </div>
+            <div>
+                <img src="IMG/Rout/1/A2.png" />
+                <br />
+                库存量：2
+                <br />
+                ［Rout*10］
+            </div>
+            <div>
+                <img src="IMG/Rout/1/A3.png" />
+                <br />
+                库存量：1
+                <br />
+                ［Rout*10］
+            </div>
+            <div>
+                <img src="IMG/Rout/1/B1.png" />
+                <br />
+                库存量：6
+                <br />
+                ［Rout*8］
+            </div>
+            <div>
+                <img src="IMG/Rout/1/B2.png" />
+                <br />
+                库存量：1
+                <br />
+                ［Rout*30］
+            </div>
+            <div>
+                <img src="IMG/Rout/1/B3.png" />
+                <br />
+                库存量：1
+                <br />
+                ［Rout*6］
+            </div>
+            <div>
+                <img src="IMG/Rout/1/C1.png" />
+                <br />
+                库存量：3
+                <br />
+                ［Rout*3］
+            </div>
+            <div>
+                <img src="IMG/Rout/1/C2.png" />
+                <br />
+                库存量：3
+                <br />
+                ［Rout*5］
+            </div>
+            <div>
+                <img src="IMG/Rout/1/C3.png" />
+                <br />
+                库存量：2
+                <br />
+                ［Rout*8］
+            </div>
+        </div>
+    </div>
+
+    <button onclick="button2()" id="bu2">
+        赋能奖池
+    </button>
+    <div id="div2" class="d4">
+        <img src="IMG/Rout/01.jpg" />
+        <div>
+            赋能·诡计 <br />
+            <img src="IMG/Rout/2/A1.png" />
+            <br />
+            库存量：3
+            <br />
+            ［Rout*3.2］
+        </div>
+        <div>
+            赋能·速攻 <br />
+            <img src="IMG/Rout/2/A2.png" />
+            <br />
+            库存量：4
+            <br />
+            ［Rout*4.2］
+        </div>
+        <div>
+            魔导·侵略 <br />
+            <img src="IMG/Rout/2/A3.png" />
+            <br />
+            库存量：19
+            <br />
+            ［Rout*3.9］
+        </div>
+        <div>
+            赋能·保卫者 <br />
+            <img src="IMG/Rout/2/B1.png" />
+            <br />
+            库存量：3
+            <br />
+            ［Rout*5］
+        </div>
+        <div>
+            赋能·精确 <br />
+            <img src="IMG/Rout/2/B2.png" />
+            <br />
+            库存量：3
+            <br />
+            ［Rout*5.5］
+        </div>
+        <div>
+            蜕化·活力 <br />
+            <img src="IMG/Rout/2/B3.png" />
+            <br />
+            库存量：10
+            <br />
+            ［Rout*2］
+        </div>
+        <div>
+            始现·救世 <br />
+            <img src="IMG/Rout/2/C1.png" />
+            <br />
+            库存量：6
+            <br />
+            ［Rout*3］
+        </div>
+        <div>
+            分形·重置 <br />
+            <img src="IMG/Rout/2/C2.png" />
+            <br />
+            库存量：11
+            <br />
+            ［Rout*3］
+        </div>
+        <div>
+            近战·渐强 <br />
+            <img src="IMG/Rout/2/C3.png" />
+            <br />
+            库存量：1
+            <br />
+            ［Rout*10］
+        </div>
+    </div>
+
+    <button onclick="button3()" id="bu3">
+        阿耶檀识
+    </button>
+    <div id="div3" class="d4">
+        <div>
+            Anasa塑像 <br />
+            <img src="IMG/Rout/3/A1.png" />
+            <br />
+            库存量：7
+            <br />
+            ［Rout*10］
+        </div>
+        <div>
+            Hemakara塑像 <br />
+            <img src="IMG/Rout/3/A2.png" />
+            <br />
+            库存量：2
+            <br />
+            ［Rout*16］
+        </div>
+        <div>
+            Vaya塑像 <br />
+            <img src="IMG/Rout/3/A3.png" />
+            <br />
+            库存量：7
+            <br />
+            ［Rout*6］
+        </div>
+    </div>
+
+    <br /><br />
+
+    <div class="atxt">
+        <button onclick="button4()" id="bu4">
+            集团商店
+        </button>
+        <div id="div4" class="d4">
+            <br />
+            <div>
+                <img src="IMG/Rout/R/A1.png" />
+                <br />
+                能量转换
+                <br />
+                ［Rout*50］
+            </div>
+            <div>
+                <img src="IMG/Rout/R/A2.png" />
+                <br />
+                不渝珊瑚
+                <br />
+                ［Rout*15］
+            </div>
+            <div>
+                <img src="IMG/Rout/R/A3.png" />
+                <br />
+                强化箭袋
+                <br />
+                ［Rout*12］
+            </div>
+            <div>
+                <img src="IMG/Rout/R/B1.png" />
+                <br />
+                镀层 弹头扩散
+                <br />
+                ［Rout*12］
+            </div>
+            <div>
+                <img src="IMG/Rout/R/B2.png" />
+                <br />
+                镀层 分裂膛室
+                <br />
+                ［Rout*12］
+            </div>
+            <div>
+                <img src="IMG/Rout/R/B3.png" />
+                <br />
+                镀层 斩铁
+                <br />
+                ［Rout*12］
+            </div>
+            <div>
+                <img src="IMG/Rout/R/C1.png" />
+                <br />
+                枢议·赫利俄光锤
+                <br />
+                ［Rout*37］
+            </div>
+            <div>
+                <img src="IMG/Rout/R/C2.png" />
+                <br />
+                苏达护甲套装
+                <br />
+                ［Rout*37］
+            </div>
+            <div>
+                <img src="IMG/Rout/R/C3.png" />
+                <br />
+                圣所幻影装置
+                <br />
+                ［Rout*15］
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function button1() {
+        var div1 = document.getElementById('div1');
+        var bu1 = document.getElementById('bu1');
+        if (div1.style.display == 'block') {
+            div1.style.display = 'none'
+            bu1.innerText = "MOD奖池"
+        } else {
+            div1.style.display = 'block'
+            bu1.innerText = "☃MOD奖池☃"
+        }
+    }
+
+    function button2() {
+        var div2 = document.getElementById('div2');
+        var bu2 = document.getElementById('bu2');
+        if (div2.style.display == 'block') {
+            div2.style.display = 'none'
+            bu2.innerText = "赋能奖池"
+        } else {
+            div2.style.display = 'block'
+            bu2.innerText = "☃赋能奖池☃"
+        }
+    }
+
+    function button3() {
+        var div3 = document.getElementById('div3');
+        var bu3 = document.getElementById('bu3');
+        if (div3.style.display == 'block') {
+            div3.style.display = 'none'
+            bu3.innerText = "阿耶檀识"
+        } else {
+            div3.style.display = 'block'
+            bu3.innerText = "☃阿耶檀识☃"
+        }
+    }
+    function button4() {
+        var div4 = document.getElementById('div4');
+        var bu4 = document.getElementById('bu4');
+        if (div4.style.display == 'block') {
+            div4.style.display = 'none'
+            bu4.innerText = "集团商店"
+        } else {
+            div4.style.display = 'block'
+            bu4.innerText = "☃集团商店☃"
+        }
+    }
+    
+const texts = ["Night Elf Rose", "暗夜精灵玫瑰"];
+let index = 0;
+let isTyping = true;
+let cursor = 0;
+let blinkInterval;
+
+// 初始化光标闪烁
+function initBlink() {
+  blinkInterval = setInterval(() => {
+    const cursorElement = document.getElementById("cursor");
+    cursorElement.style.visibility = cursorElement.style.visibility === "hidden" ? "visible" : "hidden";
+  }, 500); // 光标闪烁速度为500ms
+}
+
+// 停止光标闪烁
+function stopBlink() {
+  clearInterval(blinkInterval);
+}
+
+// 添加光标元素
+function addCursor() {
+  const cursorElement = document.createElement("span");
+  cursorElement.id = "cursor";
+  cursorElement.textContent = "|";
+  cursorElement.style.visibility = "visible"; // 初始可见
+  document.getElementById("typing").appendChild(cursorElement);
+  initBlink(); // 开始闪烁
+}
+
+// 移除光标元素
+function removeCursor() {
+  const cursorElement = document.getElementById("cursor");
+  if (cursorElement) {
+    stopBlink();
+    cursorElement.remove();
+  }
+}
+
+function typeEffect() {
+  const textElement = document.getElementById("typing");
+  const currentText = texts[index];
+  if (isTyping) {
+    if (cursor < currentText.length) {
+      textElement.textContent += currentText.charAt(cursor);
+      cursor++;
+    } else {
+      // 完成打印后，添加光标并等待一段时间再删除
+      addCursor();
+      setTimeout(() => {
+        isTyping = false;
+        cursor = 0;
+        setTimeout(() => {
+          removeCursor();
+          typeEffect(); // 继续执行删除操作
+        }, 1500); // 打印完成后停顿1秒
+        return;
+      }, 300); // 打字速度为300ms每个字符
+      return;
+    }
+  } else {
+    if (textElement.textContent.length > 0) {
+      textElement.textContent = textElement.textContent.slice(0, -1);
+    } else {
+      // 完成删除后，打印下一个字符串
+      isTyping = true;
+      index = (index + 1) % texts.length;
+      removeCursor();
+      setTimeout(typeEffect, 400); // 等待500ms后开始打印下一个文本
+      return;
+    }
+  }
+  setTimeout(typeEffect, isTyping ? 100 : 100); // 打字速度为300ms每个字符，删除速度为200ms每个字符
+}
+
+// 确保HTML中有一个id为"typing"的h2元素
+const textElement = document.createElement("h2");
+textElement.id = "typing";
+document.body.appendChild(textElement);
+
+// 初始化打字效果
+typeEffect();
+</script>
+</html>

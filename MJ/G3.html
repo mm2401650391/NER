@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Night Elf Rose</title>
+    <!--css-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+        body {
+            background: #000000;
+            color: #FFFFFF;
+            font-size: 30px;
+        }
+        .d2 {
+            background-image: url('../IMGs/01.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            color: #FF9800;
+            height: 140px;
+        }
+        .d2 img {
+            float: left;
+            margin-left: 30px;
+            margin-top: 7px;
+            width: 4em;
+            height: 4em;
+        }
+
+        .d2 h2 {
+            font-size: 60px;
+            text-align: center;
+            display：inline-block;
+            width: 65%;
+            margin-top: 20px;
+            padding: 0.5em;
+            margin-left: 2.5em;
+        }
+        a {
+            color: #003CFF;
+        }
+
+        .d2 a {
+            margin: 0;
+        }
+
+        table {
+            width: 100%;
+        }
+        table, th, td {
+            border: 1px solid #80FF00;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 25px;
+            text-align: center;
+        }
+        caption {
+            caption-side: top;
+            font-weight: bold;
+            margin: 1em 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="d2">
+        <a href="../index.html">
+            <img src="../Logo.jpg">
+        </a>
+        <h2 id="typing"></h2>
+    </div>
+    <hr />
+
+    <div class="atxt-0">
+        <table>
+            <caption>
+                氏族活动（含进行中）
+            </caption>
+            <thead>
+                <tr>
+                    <th>
+                        期序号</th>
+                    <th class="ta1">
+                        第一名</th>
+                    <th class="ta2">
+                        第二名</th>
+                    <th class="ta3">
+                        第三名</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <a href="G3/001.html">
+                            001：新鲜血液
+                        </a>
+                    </td>
+                    <td class="ta1">
+                        cvbdf</td>
+                    <td class="ta2">
+                        无</td>
+                    <td class="ta3">
+                        无</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="G3/002.html">
+                            002：捐献赛
+                        </a>
+                    </td>
+                    <td class="ta1">
+                        虚位以待</td>
+                    <td class="ta2">
+                        虚位以待</td>
+                    <td class="ta3">
+                        虚位以待</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+<!--js-->
+<script>
+    function button1() {
+        var div1 = document.getElementById('div1');
+        if (div1.style.display == 'none') {
+            div1.style.display = 'block'
+        } else {
+            div1.style.display = 'none'
+        }
+    }
+
+    function button2() {
+        var div2 = document.getElementById('div2');
+        if (div2.style.display == 'block') {
+            div2.style.display = 'none'
+        } else {
+            div2.style.display = 'block'
+        }
+    }
+
+    function button3() {
+        var div3 = document.getElementById('div3');
+        if (div3.style.display == 'block') {
+            div3.style.display = 'none'
+        } else {
+            div3.style.display = 'block'
+        }
+    }
+
+
+    const texts = ["Night Elf Rose", "暗夜精灵玫瑰"];
+    let index = 0;
+    let isTyping = true;
+    let cursor = 0;
+    let blinkInterval;
+
+    // 初始化光标闪烁
+    function initBlink() {
+        blinkInterval = setInterval(() => {
+            const cursorElement = document.getElementById("cursor");
+            cursorElement.style.visibility = cursorElement.style.visibility === "hidden" ? "visible": "hidden";
+        }, 500); // 光标闪烁速度为500ms
+    }
+
+    // 停止光标闪烁
+    function stopBlink() {
+        clearInterval(blinkInterval);
+    }
+
+    // 添加光标元素
+    function addCursor() {
+        const cursorElement = document.createElement("span");
+        cursorElement.id = "cursor";
+        cursorElement.textContent = "|";
+        cursorElement.style.visibility = "visible"; // 初始可见
+        document.getElementById("typing").appendChild(cursorElement);
+        initBlink(); // 开始闪烁
+    }
+
+    // 移除光标元素
+    function removeCursor() {
+        const cursorElement = document.getElementById("cursor");
+        if (cursorElement) {
+            stopBlink();
+            cursorElement.remove();
+        }
+    }
+
+    function typeEffect() {
+        const textElement = document.getElementById("typing");
+        const currentText = texts[index];
+        if (isTyping) {
+            if (cursor < currentText.length) {
+                textElement.textContent += currentText.charAt(cursor);
+                cursor++;
+            } else {
+                // 完成打印后，添加光标并等待一段时间再删除
+                addCursor();
+                setTimeout(() => {
+                    isTyping = false;
+                    cursor = 0;
+                    setTimeout(() => {
+                        removeCursor();
+                        typeEffect(); // 继续执行删除操作
+                    }, 1500); // 打印完成后停顿1秒
+                    return;
+                }, 300); // 打字速度为300ms每个字符
+                return;
+            }
+        } else {
+            if (textElement.textContent.length > 0) {
+                textElement.textContent = textElement.textContent.slice(0, -1);
+            } else {
+                // 完成删除后，打印下一个字符串
+                isTyping = true;
+                index = (index + 1) % texts.length;
+                removeCursor();
+                setTimeout(typeEffect, 400); // 等待500ms后开始打印下一个文本
+                return;
+            }
+        }
+        setTimeout(typeEffect, isTyping ? 100: 100); // 打字速度为300ms每个字符，删除速度为200ms每个字符
+    }
+
+    // 确保HTML中有一个id为"typing"的h2元素
+    const textElement = document.createElement("h2");
+    textElement.id = "typing";
+    document.body.appendChild(textElement);
+
+    // 初始化打字效果
+    typeEffect();
+</script>
+
+</body>
+</html>

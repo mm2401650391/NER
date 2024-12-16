@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Night Elf Rose</title>
+    <!--css-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+        body {
+            background: #000000;
+            color: #FFFFFF;
+            font-size: 30px;
+        }
+        .d2 {
+            background-image: url('../IMGs/01.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            color: #FF9800;
+            height: 140px;
+        }
+        .d2 img {
+            float: left;
+            margin-left: 30px;
+            margin-top: 7px;
+            width: 4em;
+            height: 4em;
+        }
+
+        .d2 h2 {
+            font-size: 60px;
+            text-align: center;
+            display：inline-block;
+            width: 65%;
+            margin-top: 20px;
+            padding: 0.5em;
+            margin-left: 2.5em;
+        }
+
+        .d3 {
+            text-align: center;
+            margin-bottom: 1em;
+        }
+
+        .d3 div {
+            font-size: 45px;
+            margin: 0.5em 0em;
+        }
+        .d4 {
+            width: 100%;
+            margin: 1em 0;
+
+        }
+        button {
+            text-align: center;
+            font-size: 50px;
+            display: block;
+            width: 100%;
+        }
+        .d4 div {
+            width: 32%;
+            font-size: 40px;
+            text-align: center;
+            display: inline-block;
+            margin-bottom: 1em;
+        }
+        .d4 div img {
+            width: 80%;
+        }
+        #div1 {
+            display: block;
+        }
+        #div2,#div3 {
+            display: none;
+        }
+        #div3 span {
+            font-size: 30px;
+        }
+        a {
+            text-decoration: none;
+            color: #FFFFFF;
+            margin: 0 0.3em;
+        }
+        .a {
+            border: 1px solid #FFFFFF;
+            border-radius: 30px;
+            color: #FF0E00;
+        }
+
+        .d2 span {
+            color: #8600FF;
+            font-size: 75px;
+            margin-left: 0.3em;
+        }
+        span img {
+            width: 40px;
+        }
+        .txt {
+            float: right;
+            border: 1px solid #FFFFFF;
+        }
+        progress {
+            width: 100%;
+        }
+        .d2 a {
+            margin: 0;
+        }
+        .atxt {
+            text-align: center;
+        }
+        .txt1 {
+            float: right;
+            font-size: 25px;
+        }
+        .txt0 {
+            width: 100%;
+            overflow-x: auto;
+            font-size: 40px;
+
+        }
+        .txt0 div {
+            margin-bottom: -50px;
+            width: 25%;
+            height: 50%;
+            overflow-x: auto;
+            font-size: 50px;
+            overflow: hidden;
+        }
+        .b {
+            background: #0081FF;
+            border-radius: 15px;
+        }
+
+        table {
+            width: 100%;
+        }
+        table, th, td {
+            border: 1px solid #80FF00;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 25px;
+            text-align: center;
+        }
+        caption {
+            caption-side: top;
+            font-weight: bold;
+        }
+        .ta1 {
+            color: #7944FF;
+        }
+        .ta2 {
+            color: #A7D531;
+        }
+        .ta3 {
+            color: #A10001;
+        }
+    </style>
+</head>
+<body>
+    <div class="d2">
+        <a href="../index.html">
+            <img src="../Logo.jpg">
+        </a>
+        <h2 id="typing"></h2>
+    </div>
+    <hr />
+    <div class="d3">
+        <div>
+            <a class="a">
+                ❀积分查询❀</a>
+            <a href="G2.html">
+                积分兑换
+            </a>
+        </div>
+    </div>
+
+    <div class="atxt-0">
+        <table>
+            <caption>
+                以A-Z显示拥有积分的成员
+            </caption>
+            <thead>
+                <tr>
+                    <th>
+                        游戏ID</th>
+                    <th class="ta1">
+                        Rout</th>
+                    <th class="ta2">
+                        Prime</th>
+                    <th class="ta3">
+                        置换券</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>BeaglehieNewch</td>
+                    <td class="ta1">
+                        01.00</td>
+                    <td class="ta2">
+                        0.00</td>
+                    <td class="ta3">
+                        0.0</td>
+                </tr>
+                <tr>
+                    <td>cvbdf</td>
+                    <td class="ta1">
+                        13.25</td>
+                    <td class="ta2">
+                        1.00</td>
+                    <td class="ta3">
+                        0.0</td>
+                </tr>
+                <tr>
+                    <td>chenlift</td>
+                    <td class="ta1">
+                        05.00</td>
+                    <td class="ta2">
+                        0.00</td>
+                    <td class="ta3">
+                        0.0</td>
+                </tr>
+                <tr>
+                    <td>denhe</td>
+                    <td class="ta1">
+                        16.00</td>
+                    <td class="ta2">
+                        0.00</td>
+                    <td class="ta3">
+                        0.0</td>
+                </tr>
+                <tr>
+                    <td>djw66</td>
+                    <td class="ta1">
+                        05.00</td>
+                    <td class="ta2">
+                        0.00</td>
+                    <td class="ta3">
+                        0.0</td>
+                </tr>
+                <tr>
+                    <td>Freed-om</td>
+                    <td class="ta1">
+                        01.50</td>
+                    <td class="ta2">
+                        0.00</td>
+                    <td class="ta3">
+                        0.0</td>
+                </tr>
+                <tr>
+                    <td>
+                        FengXiansenPrime
+                    </td>
+                    <td class="ta1">
+                        01.00</td>
+                    <td class="ta2">
+                       0.00</td>
+                    <td class="ta3">
+                        0.0</td>
+                </tr>
+                <tr>
+                    <td>icedus2</td>
+                    <td class="ta1">
+                        00.00</td>
+                    <td class="ta2">
+                        0.00</td>
+                    <td class="ta3">
+                        1.0</td>
+                </tr>
+                <tr>
+                    <td>JiangLai-S</td>
+                    <td class="ta1">
+                        01.00</td>
+                    <td class="ta2">
+                        0.00</td>
+                    <td class="ta3">
+                        0.0</td>
+                </tr>
+                <tr>
+                    <td>Jessie66</td>
+                    <td class="ta1">
+                        10.00</td>
+                    <td class="ta2">
+                        0.00</td>
+                    <td class="ta3">
+                        0.0</td>
+                </tr>
+                <tr>
+                    <td>GGBOND666666</td>
+                    <td class="ta1">
+                        11.75</td>
+                    <td class="ta2">
+                        0.00</td>
+                    <td class="ta3">
+                        0.0</td>
+                </tr>
+                <tr>
+                    <td>Grand_Lancer</td>
+                    <td class="ta1">
+                        01.00</td>
+                    <td class="ta2">
+                        0.00</td>
+                    <td class="ta3">
+                        0.0</td>
+                </tr>
+                <tr>
+                    <td>GENGSHIFU</td>
+                    <td class="ta1">
+                        01.00</td>
+                    <td class="ta2">
+                        0.00</td>
+                    <td class="ta3">
+                        0.0</td>
+                </tr>
+                <tr>
+                    <td>Kingprotea333</td>
+                    <td class="ta1">
+                        07.50</td>
+                    <td class="ta2">
+                        0.00</td>
+                    <td class="ta3">
+                        0.0</td>
+                </tr>
+                <tr>
+                    <td>lyxprime4060</td>
+                    <td class="ta1">
+                        15.00</td>
+                    <td class="ta2">
+                        0.00</td>
+                    <td class="ta3">
+                        0.0</td>
+                </tr>
+                <tr>
+                    <td>Mrxushao</td>
+                    <td class="ta1">
+                        10.75</td>
+                    <td class="ta2">
+                        0.00</td>
+                    <td class="ta3">
+                        0.0</td>
+                </tr>
+                <tr>
+                    <td>Pei-ting</td>
+                    <td class="ta1">
+                        05.00</td>
+                    <td class="ta2">
+                        0.00</td>
+                    <td class="ta3">
+                       0.0</td>
+                </tr>                
+                <tr>
+                    <td>warfreme_prime</td>
+                    <td class="ta1">
+                        05.00</td>
+                    <td class="ta2">
+                        0.00</td>
+                    <td class="ta3">
+                        0.0</td>
+                </tr>
+               
+                <tr>
+                    <td>ZXQgood</td>
+                    <td class="ta1">
+                        11.50</td>
+                    <td class="ta2">
+                        0.00</td>
+                    <td class="ta3">
+                        0.0</td>
+                </tr>
+
+
+
+            </tbody>
+        </table>
+    </div>
+</body>
+<!--js-->
+<script>
+    function button1() {
+        var div1 = document.getElementById('div1');
+        if (div1.style.display == 'none') {
+            div1.style.display = 'block'
+        } else {
+            div1.style.display = 'none'
+        }
+    }
+
+    function button2() {
+        var div2 = document.getElementById('div2');
+        if (div2.style.display == 'block') {
+            div2.style.display = 'none'
+        } else {
+            div2.style.display = 'block'
+        }
+    }
+
+    function button3() {
+        var div3 = document.getElementById('div3');
+        if (div3.style.display == 'block') {
+            div3.style.display = 'none'
+        } else {
+            div3.style.display = 'block'
+        }
+    }
+
+
+const texts = ["Night Elf Rose", "暗夜精灵玫瑰"];
+let index = 0;
+let isTyping = true;
+let cursor = 0;
+let blinkInterval;
+
+// 初始化光标闪烁
+function initBlink() {
+  blinkInterval = setInterval(() => {
+    const cursorElement = document.getElementById("cursor");
+    cursorElement.style.visibility = cursorElement.style.visibility === "hidden" ? "visible" : "hidden";
+  }, 500); // 光标闪烁速度为500ms
+}
+
+// 停止光标闪烁
+function stopBlink() {
+  clearInterval(blinkInterval);
+}
+
+// 添加光标元素
+function addCursor() {
+  const cursorElement = document.createElement("span");
+  cursorElement.id = "cursor";
+  cursorElement.textContent = "|";
+  cursorElement.style.visibility = "visible"; // 初始可见
+  document.getElementById("typing").appendChild(cursorElement);
+  initBlink(); // 开始闪烁
+}
+
+// 移除光标元素
+function removeCursor() {
+  const cursorElement = document.getElementById("cursor");
+  if (cursorElement) {
+    stopBlink();
+    cursorElement.remove();
+  }
+}
+
+function typeEffect() {
+  const textElement = document.getElementById("typing");
+  const currentText = texts[index];
+  if (isTyping) {
+    if (cursor < currentText.length) {
+      textElement.textContent += currentText.charAt(cursor);
+      cursor++;
+    } else {
+      // 完成打印后，添加光标并等待一段时间再删除
+      addCursor();
+      setTimeout(() => {
+        isTyping = false;
+        cursor = 0;
+        setTimeout(() => {
+          removeCursor();
+          typeEffect(); // 继续执行删除操作
+        }, 1500); // 打印完成后停顿1秒
+        return;
+      }, 300); // 打字速度为300ms每个字符
+      return;
+    }
+  } else {
+    if (textElement.textContent.length > 0) {
+      textElement.textContent = textElement.textContent.slice(0, -1);
+    } else {
+      // 完成删除后，打印下一个字符串
+      isTyping = true;
+      index = (index + 1) % texts.length;
+      removeCursor();
+      setTimeout(typeEffect, 400); // 等待500ms后开始打印下一个文本
+      return;
+    }
+  }
+  setTimeout(typeEffect, isTyping ? 100 : 100); // 打字速度为300ms每个字符，删除速度为200ms每个字符
+}
+
+// 确保HTML中有一个id为"typing"的h2元素
+const textElement = document.createElement("h2");
+textElement.id = "typing";
+document.body.appendChild(textElement);
+
+// 初始化打字效果
+typeEffect();
+</script>
+
+</body>
+</html>

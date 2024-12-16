@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Night Elf Rose</title>
+    <!--css-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+        body {
+            background: #000000;
+            color: #FFFFFF;
+            font-size: 30px;
+        }
+        .d2 {
+            background-image: url('../../IMGs/01.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            color: #FF9800;
+            height: 140px;
+        }
+        .d2 img {
+            float: left;
+            margin-left: 30px;
+            margin-top: 7px;
+            width: 4em;
+            height: 4em;
+        }
+
+        .d2 h2 {
+            font-size: 60px;
+            text-align: center;
+            display：inline-block;
+            width: 65%;
+            margin-top: 20px;
+            padding: 0.5em;
+            margin-left: 2.5em;
+        }
+
+        .d2 span {
+            color: #8600FF;
+            font-size: 75px;
+            margin-left: 0.3em;
+        }
+
+        .d2 a {
+            margin: 0;
+        }
+        .txt {
+            text-align: center;
+        }
+        .txt1 {
+            text-align: center;
+            color: #FF0E00;
+        }
+        .txt2 {
+            color: #80FF00;
+            font-weight: bold;
+        }
+        .txt2 span {
+            color: #FF002D;
+        }
+    </style>
+</head>
+<body>
+    <div class="d2">
+        <a href="../../index.html">
+            <img src="../../Logo.jpg" />
+        </a>
+        <h2 id="typing"></h2>
+    </div>
+    <hr />
+    <h5 class="txt">【001：新鲜血液】</h5>
+    <h5 class="txt1">
+        访问的页面已过时，活动已结束</h5>
+    <br />
+
+    <p class="txt2">
+        ①参与条件：
+    </p>
+    <p>
+        Ps.没有段位，氏族成员均可参与
+    </p>
+    <br />
+    <p class="txt2">
+        ②活动规则：
+    </p>
+    <p>
+        Ps.<br />
+        邀请任意玩家加入氏族和群聊即可，禁止拉个人小号，一经发现，后续的所有活动都无法再参与，邀请加入后，被邀请人ID私下发给群主，或者在群里@群主
+    </p>
+    <br />
+    <p class="txt2">
+        ③获奖规则：
+    </p>
+    <p>
+        Ps.
+        邀请最多的前三名，第一名最少要邀请3名玩家加入，第二名至少需要2名，第三名至少需要1名
+    </p>
+    <br />
+    <p class="txt2">
+        ④排名奖励： 
+        <span>
+        结算时间：2024.12.9（20点）
+        </span>
+    </p>
+    <p>
+        第一名：Prime*1,Rout*30
+        <br />
+        笫二名：Rout*40
+        <br />
+        第三名：Rout*20
+    </p>
+
+</body>
+<!--js-->
+<script>
+const texts = ["Night Elf Rose", "暗夜精灵玫瑰"];
+let index = 0;
+let isTyping = true;
+let cursor = 0;
+let blinkInterval;
+
+// 初始化光标闪烁
+function initBlink() {
+  blinkInterval = setInterval(() => {
+    const cursorElement = document.getElementById("cursor");
+    cursorElement.style.visibility = cursorElement.style.visibility === "hidden" ? "visible" : "hidden";
+  }, 500); // 光标闪烁速度为500ms
+}
+
+// 停止光标闪烁
+function stopBlink() {
+  clearInterval(blinkInterval);
+}
+
+// 添加光标元素
+function addCursor() {
+  const cursorElement = document.createElement("span");
+  cursorElement.id = "cursor";
+  cursorElement.textContent = "|";
+  cursorElement.style.visibility = "visible"; // 初始可见
+  document.getElementById("typing").appendChild(cursorElement);
+  initBlink(); // 开始闪烁
+}
+
+// 移除光标元素
+function removeCursor() {
+  const cursorElement = document.getElementById("cursor");
+  if (cursorElement) {
+    stopBlink();
+    cursorElement.remove();
+  }
+}
+
+function typeEffect() {
+  const textElement = document.getElementById("typing");
+  const currentText = texts[index];
+  if (isTyping) {
+    if (cursor < currentText.length) {
+      textElement.textContent += currentText.charAt(cursor);
+      cursor++;
+    } else {
+      // 完成打印后，添加光标并等待一段时间再删除
+      addCursor();
+      setTimeout(() => {
+        isTyping = false;
+        cursor = 0;
+        setTimeout(() => {
+          removeCursor();
+          typeEffect(); // 继续执行删除操作
+        }, 1500); // 打印完成后停顿1秒
+        return;
+      }, 300); // 打字速度为300ms每个字符
+      return;
+    }
+  } else {
+    if (textElement.textContent.length > 0) {
+      textElement.textContent = textElement.textContent.slice(0, -1);
+    } else {
+      // 完成删除后，打印下一个字符串
+      isTyping = true;
+      index = (index + 1) % texts.length;
+      removeCursor();
+      setTimeout(typeEffect, 400); // 等待500ms后开始打印下一个文本
+      return;
+    }
+  }
+  setTimeout(typeEffect, isTyping ? 100 : 100); // 打字速度为300ms每个字符，删除速度为200ms每个字符
+}
+
+// 确保HTML中有一个id为"typing"的h2元素
+const textElement = document.createElement("h2");
+textElement.id = "typing";
+document.body.appendChild(textElement);
+
+// 初始化打字效果
+typeEffect();
+</script>
+</html>
