@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Night Elf Rose</title>
+    <!--css-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+        body {
+            background: #000000;
+            color: #FFFFFF;
+            font-size: 30px;
+        }
+        .d2 img {
+            float: left;
+            margin-left: 30px;
+            margin-top: 7px;
+            width: 4em;
+            height: 4em;
+        }
+
+        .d2 h2 {
+            font-size: 60px;
+            text-align: center;
+            display：inline-block;
+            width: 65%;
+            margin-top: 20px;
+            padding: 0.5em;
+            margin-left: 2.5em;
+        }
+
+        .d3 {
+            margin: 0.5em 0em;
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        .d3 div {
+            height: 1.2em;
+            width: 40.1em;
+            overflow-x: auto;
+            font-size: 50px;
+
+        }
+        .d4 {
+            width: 100%;
+            margin: 1em 0;
+
+        }
+        button {
+            text-align: center;
+            font-size: 50px;
+            display: block;
+            width: 100%;
+        }
+        .d4 div {
+            width: 32%;
+            font-size: 40px;
+            text-align: center;
+            display: inline-block;
+            margin-bottom: 1em;
+        }
+        .d4 div img {
+            width: 80%;
+        }
+        #div1 {
+            display: block;
+        }
+        #div2,#div3 {
+            display: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #FFFFFF;
+            margin: 0 0.3em;
+        }
+        .a {
+            border: 1px solid #FFFFFF;
+            border-radius: 30px;
+            color: #FF0E00;
+        }
+
+        .d2 span {
+            color: #8600FF;
+            font-size: 75px;
+            margin-left: 0.3em;
+        }
+        span img {
+            width: 40px;
+        }
+        #div3 span{
+            font-size: 30px;
+        }
+        .d2 a{
+            margin:0;
+        }
+    </style>
+</head>
+<body>
+    <div class="d2">
+        <a href="../index.html">
+            <img src="../Logo.jpg" />
+        </a>
+        <h2>
+            <span>N</span>ight
+            <span>E</span>lf
+            <span>R</span>ose
+        </h2>
+    </div>
+    <hr />
+    <div class="d3">
+        <div>
+            <a class="a">能源实验室</a>
+            <a href="2/imgs.html">
+                生物实验室</a>
+            <a href="3/imgs.html">
+                化学实验室</a>
+            <a href="4/imgs.html">Tenno实验室</a>
+            <a href="5/imgs.html">
+                通风小子的拼装实验室
+            </a>
+            <a href="6/imgs.html">
+                Orokin实验室</a>
+        </div>
+    </div>
+
+    <button onclick="button1()">
+        进行中的研究
+        <span><img src="s.jpg"/></span>
+    </button>
+    <div id="div1" class="d4">
+        <img src="no1.jpg" width="100%" />
+    </div>
+
+    <button onclick="button2()">
+        待进行的研究
+        <span><img src="s.jpg"/></span>
+    </button>
+    <div id="div2" class="d4">
+        <img src="no1.jpg" width="100%" />
+    </div>
+
+    <button onclick="button3()">
+        已完成的研究
+        <span><img src="s.jpg"/></span>
+    </button>
+    <div id="div3" class="d4">
+        <div>
+            <img src="1/A01.jpg" />
+            <br />
+            安培克斯
+        </div>
+        <div>
+            <img src="1/A02.jpg" />
+            <br />
+            弧电离子枪
+        </div>
+        <div>
+            <img src="1/A03.jpg" />
+            <br />
+            弧电探知者
+        </div>
+        <div>
+            <img src="1/A04.jpg" />
+            <br />
+            武使之力
+        </div>
+        <div>
+            <img src="1/A05.jpg" />
+            <br />
+            导热聚焦枪
+        </div>
+        <div>
+            <img src="1/A06.jpg" />
+            <br />
+            氰毒
+        </div>
+        <div>
+            <img src="1/A07.jpg" />
+            <br />
+            循环离子枪
+        </div>
+        <div>
+            <img src="1/A08.jpg" />
+            <br />
+            德拉
+        </div>
+        <div>
+            <img src="1/A09.jpg" />
+            <br />
+            锡斯特双枪
+        </div>
+        <div>
+            <img src="1/A10.jpg" />
+            <br />
+            猎鹰轮
+        </div>
+        <div>
+            <img src="1/A11.jpg" />
+            <br />
+            铁晶磁轨炮
+        </div>
+        <div>
+            <img src="1/A12.jpg" />
+            <br />
+            通量步枪
+        </div>
+        <div>
+            <img src="1/A13.jpg" />
+            <br />
+            冷冻光束步枪
+        </div>
+        <div>
+            <img src="1/A14.jpg" />
+            <br />
+            猛毒
+        </div>
+        <div>
+            <img src="1/A15.jpg" />
+            <br />
+            直镐
+        </div>
+        <div>
+            <img src="1/A16.jpg" />
+            <br />
+            兰卡
+        </div>
+        <div>
+            <img src="1/A17.jpg" />
+            <br />
+            楞次弓
+        </div>
+        <div>
+            <img src="1/A18.jpg" />
+            <br />
+            视使之触
+        </div>
+        <div>
+            <img src="1/A19.jpg" />
+            <br />
+            奥堤克光子枪
+        </div>
+        <div>
+            <img src="1/A20.jpg" />
+            <br />
+            普罗沃
+        </div>
+        <div>
+            <img src="1/A21.jpg" />
+            <br />
+            量子切割器
+        </div>
+        <div>
+            <img src="1/A22.jpg" />
+            <br />
+            电能斩锯
+        </div>
+        <div>
+            <img src="1/A23.jpg" />
+            <br />
+            光谱切割器
+        </div>
+        <div>
+            <img src="1/A24.jpg" />
+            <br />
+            静电能量导引枪
+        </div>
+        <div>
+            <img src="1/A25.jpg" />
+            <br />
+            苏普拉
+        </div>
+        <div>
+            <img src="1/A26.jpg" />
+            <br />
+            赫利俄斯
+        </div>
+        <div>
+            <img src="1/A27.jpg" />
+            <br />
+            抗血清注射器
+        </div>
+        <div>
+            <img src="1/A28.jpg" />
+            <br />
+            电磁力场装置
+        </div>
+        <div>
+            <img src="1/A29.jpg" />
+            <br />
+            <span>团队能量补给(中型)</span>
+        </div>
+        <div>
+            <img src="1/A30.jpg" />
+            <br />
+            <span>团队护盾补给(中型)</span>
+        </div>
+    </div>
+</body>
+<!--js-->
+<script>
+    function button1() {
+        var div1 = document.getElementById('div1');
+        if (div1.style.display == 'none') {
+            div1.style.display = 'block'
+        } else {
+            div1.style.display = 'none'
+        }
+    }
+
+    function button2() {
+        var div2 = document.getElementById('div2');
+        if (div2.style.display == 'block') {
+            div2.style.display = 'none'
+        } else {
+            div2.style.display = 'block'
+        }
+    }
+
+    function button3() {
+        var div3 = document.getElementById('div3');
+        if (div3.style.display == 'block') {
+            div3.style.display = 'none'
+        } else {
+            div3.style.display = 'block'
+        }
+    }
+</script>
+</html>
