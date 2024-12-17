@@ -184,7 +184,7 @@
                 <div>
                     <img src="IMG/G/2.png" />
  	<br />
-                    Prime*50
+Prime*5
                     <br />
                     ［Rout*100+置换券*1］
                 </div>
@@ -205,99 +205,99 @@
                 <br />
                 <h4>
                     每人每周限每种兑换各一张
-                </h4>
-                <br />
+                </H4>
+                <溴/>
                 <div>
-                    <img src="IMG/G/4.png" />
-                    <br />
-                    置换券*1
-                    <br />
-                    ［Rout*50］
+                    <IMGsrc="IMG/G/4.png" />
+                    <溴/>
+置换券*1
+                    <溴/>
+[路由*50]
                 </div>
                 <div>
-                    <img src="IMG/G/4.png" />
-                    <br />
-                    置换券*1
-                    <br />
-                    ［Prime*2.5］
+                    <IMGsrc="IMG/G/4.png" />
+                    <溴/>
+置换券*1
+                    <溴/>
+[Prime*2.5]
                 </div>
             </div>
-        </body>
-        <!--js-->
-        <script>
-            function button1() {
-                var div1 = document.getElementById('div1');
-                var bu1 = document.getElementById('bu1');
-                if (div1.style.display == 'none') {
-                    div1.style.display = 'block'
-                    bu1.innerText = "☃置换池☃"
-                } else {
-                    div1.style.display = 'none'
-                    bu1.innerText = "置换池"
+</body>
+        <！--js-->
+        <脚本>
+            功能 按钮1() {
+                var Div1=文档。getElementById('div1');
+                var BU1=文档。getElementById('BU1');
+                如果 (Div1.风格.显示=='无') {
+Div1.风格.显示='块'
+BU1.内部文本="☃置换池n☃"
+                } 其他 {
+Div1.风格.显示='无'
+BU1.内部文本="置换池"
                 }
             }
 
 
-            const texts = ["Night Elf Rose", "暗夜精灵玫瑰"];
-            let index = 0;
-            let isTyping = true;
-            let cursor = 0;
-            let blinkInterval;
+            Const 文本=["暗夜精灵玫瑰","暗夜精灵玫瑰"];
+            让 指数=0;
+            让 isTyping=正确;
+            让 光标=0;
+            让 blinkInterval;
 
             // 初始化光标闪烁
-            function initBlink() {
-                blinkInterval = setInterval(() => {
-                    const cursorElement = document.getElementById("cursor");
-                    cursorElement.style.visibility = cursorElement.style.visibility === "hidden" ? "visible": "hidden";
-                }, 500); // 光标闪烁速度为500ms
+            功能 initBlink() {
+blinkInterval=setInterval(()=>{
+                    Const cursorElement=文档。getElementById("光标");
+cursorElement。风格.能见度=cursorElement。风格.能见度==="隐藏"?"可见":"隐藏";
+                },500);//光标闪烁速度为500女士
             }
 
             // 停止光标闪烁
-            function stopBlink() {
+            功能 stopBlink() {
                 clearInterval(blinkInterval);
             }
 
             // 添加光标元素
-            function addCursor() {
-                const cursorElement = document.createElement("span");
-                cursorElement.id = "cursor";
-                cursorElement.textContent = "|";
-                cursorElement.style.visibility = "visible"; // 初始可见
-                document.getElementById("typing").appendChild(cursorElement);
-                initBlink(); // 开始闪烁
+            功能 addCursor() {
+                Const cursorElement=文档。createElement("跨度");
+cursorElement。身份标识="光标";
+cursorElement。textContent="|";
+cursorElement。风格.能见度="可见";// 初始可见
+文件。getElementById("正在键入").appendChild(cursorElement);
+                initBlink();// 开始闪烁
             }
 
             // 移除光标元素
-            function removeCursor() {
-                const cursorElement = document.getElementById("cursor");
-                if (cursorElement) {
+            功能 removeCursor() {
+                Const cursorElement=文档。getElementById("光标");
+                如果 (cursorElement) {
                     stopBlink();
-                    cursorElement.remove();
+cursorElement。移除();
                 }
             }
 
-            function typeEffect() {
-                const textElement = document.getElementById("typing");
-                const currentText = texts[index];
-                if (isTyping) {
-                    if (cursor < currentText.length) {
-                        textElement.textContent += currentText.charAt(cursor);
-                        cursor++;
-                    } else {
+            功能 typeEffect() {
+                Const TextElement=文档。getElementById("正在键入");
+                Const currentText=文本[指数];
+                如果 (isTyping) {
+                    如果 (光标<当前文本。长度) {
+TextElement。textContent+=currentText。charAt(光标);
+游标++；
+                    } 其他 {
                         // 完成打印后，添加光标并等待一段时间再删除
                         addCursor();
-                        setTimeout(() => {
-                            isTyping = false;
-                            cursor = 0;
-                            setTimeout(() => {
+                        setTimeout(()=>{
+isTyping=假的;
+光标=0;
+                            setTimeout(()=>{
                                 removeCursor();
-                                typeEffect(); // 继续执行删除操作
-                            }, 1500); // 打印完成后停顿1秒
-                            return;
-                        }, 300); // 打字速度为300ms每个字符
-                        return;
+                                typeEffect();// 继续执行删除操作
+                            },1500);// 打印完成后停顿1秒
+                            返回;
+                        },300);// 打字速度为300ms每个字符
+                        返回;
                     }
-                } else {
+                } 其他 {
                     if (textElement.textContent.length > 0) {
                         textElement.textContent = textElement.textContent.slice(0, -1);
                     } else {
