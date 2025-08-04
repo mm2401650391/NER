@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Night Elf Rose</title>
+    <!--css-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #000000;
+            color: #FFFFFF;
+            font-size: 30px;
+        }
+        .d2 {
+            background-image: url('../IMGs/01.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            color: #FF9800;
+            height: 140px;
+        }
+        .d2 img {
+            float: left;
+            margin-left: 30px;
+            margin-top: 7px;
+            width: 4em;
+            height: 4em;
+        }
+        .d2 {
+            background-image: url('../IMGs/01.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .d2 h2 {
+            font-size: 60px;
+            text-align: center;
+            display：inline-block;
+            width: 65%;
+            margin-top: 20px;
+            padding: 0.5em;
+            margin-left: 2.5em;
+        }
+
+        .d3 {
+            text-align: center;
+            margin-bottom: 1em;
+        }
+
+        .d3 div {
+            font-size: 45px;
+            margin: 0.5em 0em;
+        }
+
+        .d4 {
+            width: 100%;
+        }
+
+        button {
+            text-align: center;
+            font-size: 50px;
+            display: block;
+            width: 80%;
+            outline: none;
+            background: none;
+            color: #FFFFFF;
+            margin: 0.3em 10%;
+            border-radius: 1em;
+        }
+
+        .d5 {
+            width: 49%;
+            font-size: 40px;
+            text-align: center;
+            display: inline-block;
+            margin-bottom: 0.5em;
+            border: 1px solid #80FF00;
+        }
+        .d5 div {
+            width: 48%;
+            font-size: 40px;
+            text-align: center;
+            display: inline-block;
+            border: 1px solid #80FF00;
+        }
+        #d6 {
+            border: none;
+        }
+        #div1, #div2, #div3, #div4 {
+            display: none;
+        }
+
+        #div3 span {
+            font-size: 30px;
+        }
+        a {
+            text-decoration: none;
+            color: #FFFFFF;
+            margin: 0 0.3em;
+        }
+
+        .a {
+            border: 1px solid #FFFFFF;
+            border-radius: 30px;
+            color: #FF0E00;
+        }
+
+        .d2 span {
+            color: #8600FF;
+            font-size: 75px;
+            margin-left: 0.3em;
+        }
+
+        span img {
+            width: 40px;
+        }
+
+        .txt {
+            float: right;
+            border: 1px solid #FFFFFF;
+        }
+
+        progress {
+            width: 100%;
+        }
+
+        .d2 a {
+            margin: 0;
+        }
+        .atxt {
+            text-align: center;
+
+        }
+        .atxt p {
+            font-size: 3.5vw;
+        }
+        .atxt span {
+            color: #248BFF;
+        }
+
+        .txt0 {
+            width: 100%;
+            overflow-x: auto;
+            font-size: 40px;
+        }
+
+        .txt0 div {
+            margin-bottom: -60px;
+            width: 25%;
+            overflow-x: auto;
+            font-size: 55px;
+        }
+
+        .b {
+            color: #376CFF;
+            border-radius: 15px;
+        }
+
+        .t {
+            color: #434343;
+        }
+    </style>
+</head>
+<body>
+    <div class="d2">
+        <a href="../index.html">
+            <img src="../Logo.jpg">
+        </a>
+        <h2 id="typing"></h2>
+    </div>
+    <hr />
+    <div class="d3">
+        <div>
+            <a href="G1-1.html">
+                积分查询
+            </a>
+            <a class="a">
+                ❀积分兑换❀
+            </a>
+        </div>
+    </div>
+    <div class="d3">
+        <div>
+            <a class="b">
+                <img src="IMG/Cv/1.jpg" width="70px">
+                Cv宝库
+                <img src="IMG/Cv/1.jpg" width="70px">
+            </a>
+            <a href="G5-1-2.html">
+                Prime宝库
+            </a>
+        </div>
+    </div>
+    <div class="atxt">
+        <h3>
+            兑换请群聊@cvbdf，[*数字]为库存量
+        </h3>
+        <p>
+            ps.兑换
+            <span>蓝色名称</span>
+            军械需要档案页该军械未被点亮！
+        </p>
+        <br>
+        <div class="d4">
+            <div class="d5">
+                <img src="IMG/Cv/A1.jpg" />
+                <h4>Yareli Prime</h4>
+                <div>
+                    ［头部*1]
+                </div>
+                <div>
+                    ［机体*1]
+                </div>
+                <div id="d6">
+                    100 Cv
+                </div>
+                <div id="d6">
+                    10 Cv
+                </div>
+                <div>
+                    ［系统*1]
+                </div>
+                <div>
+                    ［蓝图*1]
+                </div>
+                <div id="d6">
+                    100 Cv
+                </div>
+                <div id="d6">
+                    30 Cv
+                </div>
+            </div>
+            <div class="d5">
+                <img src="IMG/Prime/R/C3.png" />
+                <h4><span>Protea Prime</span>
+                </h4>
+                <div>
+                    ［头部*1]
+                </div>
+                <div>
+                    ［机体*1]
+                </div>
+                <div id="d6">
+                    30 Cv
+                </div>
+                <div id="d6">
+                    100 Cv
+                </div>
+                <div>
+                    ［系统*1]
+                </div>
+                <div>
+                    ［蓝图*1]
+                </div>
+                <div id="d6">
+                    100 Cv
+                </div>
+                <div id="d6">
+                    10 Cv
+                </div>
+            </div>
+            <div class="d5">
+                <img src="IMG/Prime/R/A3.png" />
+                <h4><span>Gauss Prime</span></h4>
+                <div>
+                    ［头部*1]
+                </div>
+                <div>
+                    ［机体*1]
+                </div>
+                <div id="d6">
+                    30 Cv
+                </div>
+                <div id="d6">
+                    10 Cv
+                </div>
+                <div>
+                    ［系统*1]
+                </div>
+                <div>
+                    ［蓝图*1]
+                </div>
+                <div id="d6">
+                    100 Cv
+                </div>
+                <div id="d6">
+                    10 Cv
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+
+
+
+        const texts = ["Night Elf Rose", "暗夜精灵玫瑰"];
+        let index = 0;
+        let isTyping = true;
+        let cursor = 0;
+        let blinkInterval;
+
+        // 初始化光标闪烁
+        function initBlink() {
+            blinkInterval = setInterval(() => {
+                const cursorElement = document.getElementById("cursor");
+                cursorElement.style.visibility = cursorElement.style.visibility === "hidden" ? "visible": "hidden";
+            }, 500); // 光标闪烁速度为500ms
+        }
+
+        // 停止光标闪烁
+        function stopBlink() {
+            clearInterval(blinkInterval);
+        }
+
+        // 添加光标元素
+        function addCursor() {
+            const cursorElement = document.createElement("span");
+            cursorElement.id = "cursor";
+            cursorElement.textContent = "|";
+            cursorElement.style.visibility = "visible"; // 初始可见
+            document.getElementById("typing").appendChild(cursorElement);
+            initBlink(); // 开始闪烁
+        }
+
+        // 移除光标元素
+        function removeCursor() {
+            const cursorElement = document.getElementById("cursor");
+            if (cursorElement) {
+                stopBlink();
+                cursorElement.remove();
+            }
+        }
+
+        function typeEffect() {
+            const textElement = document.getElementById("typing");
+            const currentText = texts[index];
+            if (isTyping) {
+                if (cursor < currentText.length) {
+                    textElement.textContent += currentText.charAt(cursor);
+                    cursor++;
+                } else {
+                    // 完成打印后，添加光标并等待一段时间再删除
+                    addCursor();
+                    setTimeout(() => {
+                        isTyping = false;
+                        cursor = 0;
+                        setTimeout(() => {
+                            removeCursor();
+                            typeEffect(); // 继续执行删除操作
+                        }, 1500); // 打印完成后停顿1秒
+                        return;
+                    }, 300); // 打字速度为300ms每个字符
+                    return;
+                }
+            } else {
+                if (textElement.textContent.length > 0) {
+                    textElement.textContent = textElement.textContent.slice(0, -1);
+                } else {
+                    // 完成删除后，打印下一个字符串
+                    isTyping = true;
+                    index = (index + 1) % texts.length;
+                    removeCursor();
+                    setTimeout(typeEffect, 400); // 等待500ms后开始打印下一个文本
+                    return;
+                }
+            }
+            setTimeout(typeEffect, isTyping ? 100: 100); // 打字速度为300ms每个字符，删除速度为200ms每个字符
+        }
+
+        // 确保HTML中有一个id为"typing"的h2元素
+        const textElement = document.createElement("h2");
+        textElement.id = "typing";
+        document.body.appendChild(textElement);
+
+        // 初始化打字效果
+        typeEffect();
+    </script>
+</html>
