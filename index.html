@@ -1,293 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Night Elf Rose</title>
-    <!--css-->
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Redirect</title>
+    <script>
+        
+        window.onload = function() {
+            
+            const pages = [
+                "index-1.html", 
+                "index-2.html", 
+                "index-3.html" 
+            ];
 
-        }
-        body {
-            background: #000000;
-            color: #FFFFFF;
-            font-size: 30px;
-        }
-        .d1 {
-            text-align: center;
-            background-image: url('IMGs/01.jpg');
-            height: 290px;
-            background-position: 0 -120px;
-            margin-bottom: 65px;
-        }
-        .d1 h2 {
-            font-size: 60px;
-            text-align: center;
-            color: #FF000E;
-        }
-        .d1 img {
-            width: 30%;
-            border-radius:50% 0;
-        }
-        .d2 {
-            width: 65%;
-            height: 15em;
-            border: 1px solid #FFFFFF;
-            float: left;
-            margin: 0.5em 0;
-        }
-        .d3 {
-            width: 100%;
-        }
-        .d3 div {
-            width: 49%;
-            font-size: 30px;
-            text-align: center;
-            display: inline-block;
-            margin-bottom: 1em;
-        }
-        .d3 div img {
-            width: 80%;
-        }
-        .d3 span {
-            float: right;
-            border: 1px solid #FFFFFF;
-        }
-        progress {
-            width: 100%;
-        }
-        .d4 {
-            margin: 0.5em 0;
-            margin-left: 1.5%;
-            width: 33%;
-            height: 15em;
-            display: inline-block;
-            border: 1px solid #FFFFFF;
-        }
-        .d5 {
-            margin: 0.5em 0;
-            width: 49%;
-            height: 15em;
-            display: inline-block;
-            float: left;
-            border: 1px solid #FFFFFF;
-        }
-        .d6 {
-            margin: 0.5em 0;
-            width: 49%;
-            height: 15em;
-            float: right;
-            border: 1px solid #FFFFFF;
-        }
-        .d7 {
-            border: 1px solid #FFFFFF;
-            width: 99%;
-            float: left;
-            height: 10em;
-            text-align: center;
-            margin: 0.5em 0;
-        }
-        .d7 div {
-            font-size: 38px;
-            margin: 0.2em;
-        }
-        a {
-            text-decoration: none;
-            color: #FFFFFF;
-            margin: 0 0.3em;
-        }
-        .t {
-            color: #434343;
-        }
-    </style>
+            
+            const randomIndex = Math.floor(Math.random() * pages.length);
+
+            
+            const randomPage = pages[randomIndex];
+
+            
+            window.location.href = randomPage;
+        };
+    </script>
 </head>
 <body>
-    <div class="d1">
-        <img src="Logo.jpg" />
-        <h2 id="typing"></h2>
-    </div>
-
-    <div class="d2">
-        <a href="IMGs/imgs.html">
-            氏族研究（查看全部）</a>
-        <hr />
-        <div id="div1" class="d3">
-            <div>
-                生物实验室<br />
-                <img src="IMGs/2/A07.jpg">
-                <br />
-                血肢
-                <span class="txt">83%</span>
-                <br />
-                <progress value="83" max="100">
-                </progress>
-            </div>
-            <div>
-                Tenno实验室<br />
-                <img src="IMGs/4/P/A39.jpg">
-                <br />
-                草原黄
-                <span class="txt">80%</span>
-                <br />
-                <progress value="80" max="100">
-                </progress>
-            </div>
-        </div>
-    </div>
-
-    <div class="d4">
-        站点公告
-        <hr />
-        氏族头像可返回首页
-        <br /><br />
-        1.研究界面已完成 <br />
-        2.积分宝库已完成 <br />
-    </div>
-
-    <div class="d5">
-        <a href="MJ/G3.html">
-            氏族活动（查看全部）
-        </a>
-        <hr />
-<!--
-        <h4>进行中［12.26-12.27］</h4>
-        <br />【障碍赛】
-        <br />点击查看全部或点击
-        <a href="MJ/G3/003.html">
-            『 查看详情』
-        </a>
--->
-    </div>
-
-    <div class="d6">
-        <a href="MJ/G1.html">积分宝库（查看全部）
-        </a>
-        <hr />
-        <h4>1.什么是积分？</h4>
-        可用于在积分宝库兑换奖励的货币
-        <h4>2.如何获取积分？</h4>
-        每日抽奖，每周抽奖，限时抽奖，
-        氏族活动
-        <h4>3.积分存储期限</h4>
-        Rout积分（R积分）每月清零 <br />
-        Prime积分（P积分）每月减1分
-        <br /><br />
-        <div>
-            <a href="MJ/G1.html">
-                【积分查询】</a>
-            <a href="MJ/G2.html">
-                【积分兑换】</a>
-        </div>
-    </div>
-
-    <div class="d7">
-        氏族资料库
-        <hr />
-        <div>
-            <a href="" class="t">
-                促销代码</a>
-        </div>
-        <div>
-            <a href="" class="t">
-                掉落获取</a>
-        </div>
-        <div>
-            <a href="X/X3.html">
-                演奏代码</a>
-        </div>
-        <div>
-            <a href="" class="t">
-                美术画廊</a>
-        </div>
-        <div>
-            <a href="" class="t">
-                杂项合集</a>
-        </div>
-    </div>
+    <h1>你干嘛～哎呦～</h1>
 </body>
-<script>
-    const texts = ["Night Elf Rose", "暗夜精灵玫瑰"];
-    let index = 0;
-    let isTyping = true;
-    let cursor = 0;
-    let blinkInterval;
-
-    // 初始化光标闪烁
-    function initBlink() {
-        blinkInterval = setInterval(() => {
-            const cursorElement = document.getElementById("cursor");
-            cursorElement.style.visibility = cursorElement.style.visibility === "hidden" ? "visible": "hidden";
-        }, 500); // 光标闪烁速度为500ms
-    }
-
-    // 停止光标闪烁
-    function stopBlink() {
-        clearInterval(blinkInterval);
-    }
-
-    // 添加光标元素
-    function addCursor() {
-        const cursorElement = document.createElement("span");
-        cursorElement.id = "cursor";
-        cursorElement.textContent = "|";
-        cursorElement.style.visibility = "visible"; // 初始可见
-        document.getElementById("typing").appendChild(cursorElement);
-        initBlink(); // 开始闪烁
-    }
-
-    // 移除光标元素
-    function removeCursor() {
-        const cursorElement = document.getElementById("cursor");
-        if (cursorElement) {
-            stopBlink();
-            cursorElement.remove();
-        }
-    }
-
-    function typeEffect() {
-        const textElement = document.getElementById("typing");
-        const currentText = texts[index];
-        if (isTyping) {
-            if (cursor < currentText.length) {
-                textElement.textContent += currentText.charAt(cursor);
-                cursor++;
-            } else {
-                // 完成打印后，添加光标并等待一段时间再删除
-                addCursor();
-                setTimeout(() => {
-                    isTyping = false;
-                    cursor = 0;
-                    setTimeout(() => {
-                        removeCursor();
-                        typeEffect(); // 继续执行删除操作
-                    }, 1500); // 打印完成后停顿1秒
-                    return;
-                }, 300); // 打字速度为300ms每个字符
-                return;
-            }
-        } else {
-            if (textElement.textContent.length > 0) {
-                textElement.textContent = textElement.textContent.slice(0, -1);
-            } else {
-                // 完成删除后，打印下一个字符串
-                isTyping = true;
-                index = (index + 1) % texts.length;
-                removeCursor();
-                setTimeout(typeEffect, 400); // 等待500ms后开始打印下一个文本
-                return;
-            }
-        }
-        setTimeout(typeEffect, isTyping ? 100: 100); // 打字速度为300ms每个字符，删除速度为200ms每个字符
-    }
-
-    // 确保HTML中有一个id为"typing"的h2元素
-    const textElement = document.createElement("h2");
-    textElement.id = "typing";
-    document.body.appendChild(textElement);
-
-    // 初始化打字效果
-    typeEffect();
-</script>
 </html>
